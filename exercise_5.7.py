@@ -8,7 +8,7 @@ for i in new.readlines():
     if mas[1] >= 0:
         new_dict[mas[0]] = mas[1]
 
-mas_1 = [new_dict, {"sredniya_pribl": sum(new_dict.values())}]
+mas_1 = [new_dict, {"sredniya_pribl": sum(new_dict.values())/len(new_dict)}]
 print(mas_1)
 with open("my_file.json", "w") as text_777777:
     json.dump(mas_1, text_777777)
